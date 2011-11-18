@@ -122,6 +122,8 @@ public class YuiTask extends Task {
 			    preserveAllSemiColons, disableOptimizations);
 
 	          filesProcessed++;
+		  out.flush();
+		  out.close();
 	       } catch (EvaluatorException e) {
 		   e.printStackTrace();
 		   throw new BuildException(e);
