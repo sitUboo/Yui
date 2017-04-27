@@ -19,7 +19,7 @@ import org.mozilla.javascript.ErrorReporter;
 import org.mozilla.javascript.EvaluatorException;
 
 /**
- ** Yui Tool for Ant Blah
+ ** Yui Tool for Ant  by me
 */
 public class YuiTask extends Task {
 
