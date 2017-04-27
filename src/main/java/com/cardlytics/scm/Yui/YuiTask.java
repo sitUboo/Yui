@@ -18,6 +18,10 @@ import com.yahoo.platform.yui.compressor.JavaScriptCompressor;
 import org.mozilla.javascript.ErrorReporter;
 import org.mozilla.javascript.EvaluatorException;
 
+/**
+ * Yui processor tool for Ant
+*/
+
 public class YuiTask extends Task {
 
     private Vector<FileSet> filesets = new Vector<FileSet>();
