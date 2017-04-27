@@ -9,7 +9,7 @@ stage('checkout'){
 
 stage('build'){
    node {
-     sh "echo I am building... "
+     sh "echo I am building...slowly "
      sh "ls"
    }
 }
