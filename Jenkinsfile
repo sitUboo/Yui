@@ -1,5 +1,3 @@
-println "The build is " + env.BUILD_NUMBER
-
 stage('checkout'){
    node {
       properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
