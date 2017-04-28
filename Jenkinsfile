@@ -1,3 +1,4 @@
+// Test
 stage('checkout'){
    node {
       properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
