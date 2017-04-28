@@ -1,4 +1,4 @@
-// This is a comment
+// This is a comment and more
 stage('checkout'){
    node {
       properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
