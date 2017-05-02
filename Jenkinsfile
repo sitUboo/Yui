@@ -1,4 +1,5 @@
 println "The build is " + env.BUILD_NUMBER
+println "blah"
 
 stage('checkout'){
    // checkout code
