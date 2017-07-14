@@ -1,20 +1,10 @@
-println "The build is " + env.BUILD_NUMBER
-println "blah"
 
 stage('checkout'){
    // checkout code
    node {
-           properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
-//           git credentialsId: '3ef19ff4-e2c3-42b3-9e6c-4d0940bb6921', url: 'git@github.com:sitUboo/Yui.git', branch: env.BRANCH_NAME 
-           println "The build is using branch " + env.BRANCH_NAME
-           sh "echo running build..."
-//           [$class: 'GitHubCommitStatusSetter',
-//             commitShaSource: [$class: 'ManuallyEnteredShaSource', sha: gitSha],
-//             reposSource: [$class: 'ManuallyEnteredRepositorySource', url: 'https://github.com/cloudbees/customers' ],
-//             statusBackrefSource: [ $class: 'BuildRefBackrefSource' ],
-//             contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'Quality Checks Passed' ],
-//             statusResultSource: [ $class: 'ConditionalStatusResultSource', results: [[$class: 'AnyBuildResult', message: 'Succeeded', state: 'SUCCESS']] ]
-      //  ]
+    git credentialsId: '2da9761c-bd84-4d3c-8a94-350a4897ce72', url: 'git@github.com:sitUboo/notification.git'
+
+    sh 'cat buildInfo.txt'
    }
 }
 
