@@ -2,9 +2,8 @@
 stage('checkout'){
    // checkout code
    node {
-    git credentialsId: '2da9761c-bd84-4d3c-8a94-350a4897ce72', url: 'git@github.com:sitUboo/notification.git'
-
-    sh 'cat buildInfo.txt'
+      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '2da9761c-bd84-4d3c-8a94-350a4897ce72', url: 'git@github.com:sitUboo/notification.git']]])
+      sh 'cat buildInfo.txt'
    }
 }
 
