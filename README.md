@@ -1,2 +1,2 @@
 README.md
-Project Info to trigger a build. 
+Project Info file to trigger a build.
