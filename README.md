@@ -1,2 +1,2 @@
 # Yui
-A javascript project
+A javascript project.
