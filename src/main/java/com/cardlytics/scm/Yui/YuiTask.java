@@ -138,4 +138,3 @@ public class YuiTask extends Task {
       log("Done. "+filesProcessed+" file(s) processed to minfile " + minfile.toString() +".");
     }
 }
-}
