@@ -1,2 +1,2 @@
 # Yui
-A javascript utilities project.
+A Javascript utilities project.
