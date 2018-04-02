@@ -1,10 +1,6 @@
 println "The build is " + env.BUILD_NUMBER
-def env = System.getenv()
-//Print all the environment variables.
+println "The build is running in mode " + env.PIPE_MODE
 
-env.each{
-println it
-}
 
 stage('checkout'){
    
