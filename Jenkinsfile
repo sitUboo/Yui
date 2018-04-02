@@ -1,4 +1,10 @@
 println "The build is " + env.BUILD_NUMBER
+def env = System.getenv()
+//Print all the environment variables.
+
+env.each{
+println it
+}
 
 stage('checkout'){
    
