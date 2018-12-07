@@ -9,6 +9,7 @@ stage('build'){
    timeout(time: 1, unit: 'MINUTES') {
        node {
            sh "echo I am building...slowly... "
+           sh "sleep 10"
        }
    }
 }
