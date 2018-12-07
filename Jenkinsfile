@@ -9,7 +9,7 @@ stage('build'){
    timeout(time: 1, unit: 'MINUTES') {
        node {
            sh "echo I am building.. all the while our api limit has been reached...slowly... "
-           sh "sleep 10"
+           sh "sleep 8"
        }
    }
 }
