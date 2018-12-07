@@ -6,10 +6,9 @@ stage('checkout'){
 }
 
 stage('build'){
-   timeout(time: 1, unit: 'MINUTES') {
+   timeout(time: 25, unit: 'SECONDS') {
        node {
            sh "echo I am building.. all the while our api limit has been reached...slowly... "
-           sh "sleep 8"
        }
    }
 }
