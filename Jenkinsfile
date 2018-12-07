@@ -7,7 +7,8 @@ stage('checkout'){
 
 stage('build'){
    timeout(time: 2, unit: 'MINUTES') {
-   node {
-     sh "echo I am building...slowly... "
+       node {
+           sh "echo I am building...slowly... "
+       }
    }
 }
